@@ -1,0 +1,11 @@
+.person{
+margin: 5px;
+  
+  background-color: rgb(255, 255, 255);
+
+}
+p {
+    border: 1px solid powderblue;
+    padding: 10px;
+    margin: 50px;
+  }

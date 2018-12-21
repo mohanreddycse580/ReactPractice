@@ -37,17 +37,23 @@ togglepersonhandler=()=>{
   })
   }
 
+  deletePersonhandler=(persionIndex)=>{
+const persions=this.state.persions;
+persions.splice(persionIndex,1);
+this.setState({persions:persions})
+  }
   render() {
 
     let persondata=null;
     {
       persondata= (this.state.togglepersons===true?
       <div className="PersonClass">
-
-        <Person name={this.state.persons[0].name} age={this.state.persons[0].age}/>
-        <Person click={this.changePersionData}  changed={this.changedTextValue} name={this.state.persons[1].name} age={this.state.persons[1].age}/>
-        <Person name={this.state.persons[2].name} age={this.state.persons[2].age}/>
-
+{this.state.persons.map((persion,index) =>{
+  return <Person 
+  click={()=>this.deletePersonhandler(index)}
+  name={persion.name} age={persion.age}/>
+})}
+        
       </div>:null
       );
 

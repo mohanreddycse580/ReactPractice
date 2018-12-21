@@ -1,5 +1,19 @@
 .App {
   text-align: center;
+  background-color: rgb(156, 27, 216);
+  height: 720px;
+  width: 100%;
+}
+.PersonClass{
   
+  background-color: lightblue;
+  border: 100px;
+  padding:10px 2px 30px 50px;
+  margin-top: 10px;
+  margin-bottom:10px;
+  margin-right: 100px;
+  margin-left: 100px;
+  
+
 }
 
